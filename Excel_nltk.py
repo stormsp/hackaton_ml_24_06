@@ -4,6 +4,8 @@ import pickle
 from nltk.tokenize import sent_tokenize
 
 
+nltk.download('punkt')
+
 # Загрузка классификатора
 with open('classifier.pickle', 'rb') as file:
     classifier = pickle.load(file)
